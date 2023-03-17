@@ -16,14 +16,14 @@ const routes = [{
     name: 'edit',
     component: () => import('@/views/edit/index.vue'),
     meta: {
-        title: '元件'
+        title: '配置'
     }
 }, {
     path: '/preview',
     name: 'preview',
     component: () => import('@/views/preview/index.vue'),
     meta: {
-        title: '元件'
+        title: '预览'
     }
 }, {
     path: '/element',
