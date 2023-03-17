@@ -1,0 +1,75 @@
+<template>
+  <xywh />
+  <kw-from :formList="formList" />
+  <shadow-style />
+</template>
+
+<script setup>
+  import KwFrom from '../../../otherComponents/KwFrom.vue';
+  import Xywh from '../../../styleComponents/xywh.vue';
+  import ShadowStyle from '../../../styleComponents/shadowStyle.vue';
+
+  const fontFamily = [
+    {
+      label: 'monospace',
+      value: 'monospace',
+    },
+    {
+      label: 'fantasy',
+      value: 'fantasy',
+    },
+    {
+      label: '默认',
+      value: '默认',
+    },
+  ];
+  const textAlign = [
+    { label: 'left', value: 'left' },
+    { label: 'center', value: 'center' },
+    { label: 'right', value: 'right' },
+  ];
+  const formList = [
+    {
+      inputType: 'select',
+      width: '100%',
+      label: '字体',
+      inputAttr: 'fontFamily',
+      selectOption: fontFamily,
+    },
+    {
+      inputType: 'select',
+      width: '100%',
+      label: '对齐',
+      inputAttr: 'textAlign',
+      selectOption: textAlign,
+    },
+    { inputType: 'number', width: '50%', label: '大小', inputAttr: 'fontSize' },
+    { inputType: 'number', width: '50%', label: '间距', inputAttr: 'charSpacing' },
+    { inputType: 'color', width: '50%', label: '填充色', inputAttr: 'fill' },
+    { inputType: 'color', width: '50%', label: '背景色', inputAttr: 'backgroundColor' },
+    { inputType: 'color', width: '50%', label: '边框颜色', inputAttr: 'stroke' },
+    { inputType: 'number', width: '50%', label: '粗细', inputAttr: 'strokeWidth' },
+    {
+      inputType: 'select',
+      width: '100%',
+      label: '格式',
+      inputAttr: 'format',
+      selectOption: [
+        {
+          label: '00:00:00',
+          value: 'HH:mm:ss',
+        },
+        {
+          label: '2000-01-01',
+          value: 'YYYY-MM-DD',
+        },
+        {
+          label: '2000-01-01 00:00:00',
+          value: 'YYYY-MM-DD HH:mm:ss',
+        },
+      ],
+    },
+  ];
+</script>
+
+<style scoped></style>
