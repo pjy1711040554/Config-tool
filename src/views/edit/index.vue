@@ -2,15 +2,16 @@
   <div class="page">
     <!--头部-->
     <div class="header">
-      <div>
-        <my-upload @success="uploadSuccess">
-          <a-tooltip placement="bottom">
-            <template #title>上传图片</template>
-            <div class="icon-span">
-              <i class="iconfont icon-shangchuantupian"></i>
-            </div>
-          </a-tooltip>
-        </my-upload>
+      <div style="color: #a1a1a1">
+<!--        <my-upload @success="uploadSuccess">-->
+<!--          <a-tooltip placement="bottom">-->
+<!--            <template #title>上传图片</template>-->
+<!--            <div class="icon-span">-->
+<!--              <i class="iconfont icon-shangchuantupian"></i>-->
+<!--            </div>-->
+<!--          </a-tooltip>-->
+<!--        </my-upload>-->
+        提示&nbsp;&nbsp;&nbsp;&nbsp;缩放：ctrl+滚轮&nbsp;&nbsp;&nbsp;&nbsp; 拖动：ctrl+鼠标左按下
       </div>
       <div v-if="selectObject.objects.length > 0">
         <alignment>

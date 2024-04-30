@@ -32,6 +32,13 @@ const routes = [{
     meta: {
         title: '元件'
     }
+}, {
+    path: '/demo',
+    name: 'demo',
+    component: () => import('@/views/demo/index.vue'),
+    meta: {
+        title: '工具demo'
+    }
 }]
 
 const router = createRouter({
