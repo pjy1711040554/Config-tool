@@ -59,6 +59,7 @@ const menuClick = (path) => {
   display: flex;
 
   .layout-menu {
+    min-width: 160px;
     width: 240px;
     height: 100%;
     position: relative;

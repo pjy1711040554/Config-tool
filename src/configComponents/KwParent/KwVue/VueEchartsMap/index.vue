@@ -41,7 +41,7 @@
   const getData = () => {
     const xhr = new XMLHttpRequest();
     const { cityCode } = props.node;
-    xhr.open('get', `http://test.falsehood.top/json/${cityCode}.json`, true);
+    xhr.open('get', `https://test.falsehood.top/json/${cityCode}.json`, true);
     xhr.send(null);
     xhr.onreadystatechange = () => {
       if ((xhr.status >= 200 && xhr.status < 300) || xhr.status == 304) {
